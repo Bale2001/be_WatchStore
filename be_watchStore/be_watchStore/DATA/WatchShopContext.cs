@@ -147,7 +147,7 @@ public partial class WatchShopContext : DbContext
 
             entity.Property(e => e.ImgId).HasColumnName("img_id");
             entity.Property(e => e.ImgFile)
-                .HasMaxLength(1000)
+                .IsUnicode(false)
                 .HasColumnName("img_file");
             entity.Property(e => e.ProId).HasColumnName("pro_id");
 
